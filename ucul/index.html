@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Iren tersayang </title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Itim&display=swap');
+    body{
+	  		overflow: hidden;
+	  		background: black;
+	  		width: 100%;
+	  		height: 100vh;
+            color: white;
+	  	}
+	  	.bg{
+	  		width: 100%;
+	  		height: 100vh;
+	  		position: absolute;
+	  		z-index: -1;
+
+	  		background: linear-gradient(0deg, rgba(0,7,128,1) 0%, rgba(0,3,54,1) 100%);
+	  		opacity: 0;
+	  	}
+        #waktu {
+            font-size:30px;
+            font-family: 'Itim', cursive;
+        }
+        .pesan {
+          position: absolute;
+          top: 50%; left: auto;
+          margin-top: 32px;
+          text-align: center;
+          width: 100%;
+          z-index: 10000;
+          font-size:25px;
+          display: block;
+          font-family: 'Caveat', cursive;
+          box-sizing: border-box;
+        }
+        @-webkit-keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-moz-keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-o-keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@-moz-keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@-o-keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@-webkit-keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #e01414;
+  }
+}
+@-moz-keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #e01414;
+  }
+}
+@-o-keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #e01414;
+  }
+}
+@keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #e81760;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+}
+
+.e-loadholder {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  width: 240px;
+  height: 240px;
+  border: 5px solid #aaa;
+  border-radius: 120px;
+  box-sizing: border-box;
+  opacity:1
+}
+.e-loadholder:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  content: " ";
+  display: block;
+  background: #222;
+  transform-origin: center;
+  z-index: 0;
+}
+.e-loadholder:after {
+  width: 100px;
+  height: 200%;
+  -webkit-animation: outerRotate2 30s infinite linear;
+  -moz-animation: outerRotate2 30s infinite linear;
+  -o-animation: outerRotate2 30s infinite linear;
+  animation: outerRotate2 30s infinite linear;
+}
+.e-loadholder .m-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  width: 200px;
+  height: 200px;
+  color: #888;
+  text-align: center;
+  border: 5px solid #e81760;
+  border-radius: 100px;
+  box-sizing: border-box;
+  z-index: 20;
+  text-transform: uppercase;
+}
+.e-loadholder .m-loader:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  content: " ";
+  display: block;
+  background: #222;
+  transform-origin: center;
+  z-index: -1;
+}
+.e-loadholder .m-loader:after {
+  width: 100px;
+  height: 106%;
+  -webkit-animation: outerRotate1 15s infinite linear;
+  -moz-animation: outerRotate1 15s infinite linear;
+  -o-animation: outerRotate1 15s infinite linear;
+  animation: outerRotate1 15s infinite linear;
+}
+.e-loadholder .m-loader .e-text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  -webkit-animation: textColour 1s alternate linear infinite;
+  -moz-animation: textColour 1s alternate linear infinite;
+  -o-animation: textColour 1s alternate linear infinite;
+  animation: textColour 1s alternate linear infinite;
+  display: block;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  border: 5px solid #fff;
+  border-radius: 70px;
+  box-sizing: border-box;
+  z-index: 20;
+}
+.e-loadholder .m-loader .e-text:before, .e-loadholder .m-loader .e-text:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  content: " ";
+  display: block;
+  background: #222;
+  transform-origin: center;
+  z-index: -1;
+}
+.e-loadholder .m-loader .e-text:before {
+  width: 110%;
+  height: 40px;
+  -webkit-animation: outerRotate2 3.5s infinite linear;
+  -moz-animation: outerRotate2 3.5s infinite linear;
+  -o-animation: outerRotate2 3.5s infinite linear;
+  animation: outerRotate2 3.5s infinite linear;
+}
+.e-loadholder .m-loader .e-text:after {
+  width: 40px;
+  height: 110%;
+  -webkit-animation: outerRotate1 8s infinite linear;
+  -moz-animation: outerRotate1 8s infinite linear;
+  -o-animation: outerRotate1 8s infinite linear;
+  animation: outerRotate1 8s infinite linear;
+}
+
+#particleCanvas-White {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#particleCanvas-Blue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-51%, -50%);
+  -moz-transform: translate(-51%, -50%);
+  -ms-transform: translate(-51%, -50%);
+  -o-transform: translate(-51%, -50%);
+  transform: translate(-51%, -50%);
+  width: 100%;
+  height: 100%;
+}
+  #from {
+          position: absolute;
+          bottom: 0; left: 0;
+          text-align: right;
+    padding-left: 10px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+          width: 100%;
+          z-index: 10000;
+          font-size:10px;
+          display: block;
+          font-family: 'Caveat', cursive;
+          box-sizing: border-box;
+    opacity:0.6
+        }
+</style>
+
+<body>
+<div class="bg"></div>
+<div class="container text-center">
+    <div class="e-loadholder">
+	<div class="m-loader">
+		<span class="e-text" id="waktu">Loading</span>
+	</div>
+</div>
+  <div id="from">- Akrin</div>
+  <div class="pesan text-center pt-5" id="pesan">
+  </div>
+<div id="particleCanvas-Blue"></div>
+</div>
+
+<script>
+particlesJS("particleCanvas-Blue", {
+	particles: {
+		number: {
+			value: 50,
+			density: {
+				enable: true,
+				value_area: 500
+			}
+		},
+		color: {
+			value: "#e81760"
+		},
+		shape: {
+			type: "circle",
+			stroke: {
+				width: 0,
+				color: "#000000"
+			},
+			polygon: {
+				nb_sides: 3
+			},
+			image: {
+				src: "img/github.svg",
+				width: 100,
+				height: 100
+			}
+		},
+		opacity: {
+			value: 0.5,
+			random: false,
+			anim: {
+				enable: true,
+				speed: 1,
+				opacity_min: 0.1,
+				sync: false
+			}
+		},
+		size: {
+			value: 10,
+			random: true,
+			anim: {
+				enable: false,
+				speed: 10,
+				size_min: 0.1,
+				sync: false
+			}
+		},
+		line_linked: {
+			enable: false,
+			distance: 150,
+			color: "#ffffff",
+			opacity: 0.4,
+			width: 1
+		},
+		move: {
+			enable: true,
+			speed: 0.5,
+			direction: "none",
+			random: true,
+			straight: false,
+			out_mode: "bounce",
+			bounce: false,
+			attract: {
+				enable: true,
+				rotateX: 394.57382081613633,
+				rotateY: 157.82952832645452
+			}
+		}
+	},
+	interactivity: {
+		detect_on: "canvas",
+		events: {
+			onhover: {
+				enable: false,
+				mode: "grab"
+			},
+			onclick: {
+				enable: false,
+				mode: "push"
+			},
+			resize: true
+		},
+		modes: {
+			grab: {
+				distance: 2000,
+				line_linked: {
+					opacity: 0.2
+				}
+			},
+			bubble: {
+				distance: 1500,
+				size: 40,
+				duration: 7.272727272727273,
+				opacity: 0.3676323676323676,
+				speed: 3
+			},
+			repulse: {
+				distance: 50,
+				duration: 0.4
+			},
+			push: {
+				particles_nb: 4
+			},
+			remove: {
+				particles_nb: 2
+			}
+		}
+	},
+	retina_detect: true
+});
+
+</script>
+  <script>
+  new TypeIt("#pesan", {
+  	speed: 80,
+    startDelay: 2400,
+  //  waitUntilVisible: true
+  })
+    .type("Hei, ", { delay: 700})
+  //  .pause(3400)
+    .type("iren...", { delay: 1000})
+    .move(-6)
+    .delete(1)
+    .pause(700)
+    .type("I", { delay: 800})
+    .move(6)
+    .pause(1500)
+    .break()
+    .pause(600)
+    .type("Mohon maaf lahir dan batin yaaa", { delay: 3500})
+    .delete(31)
+    .pause(1300)
+    .type("Gimana skripsimu?", { speed: 85, delay: 2000})
+    .delete(17)
+    .pause(800)
+    .type("wahh...", { delay: 1000 })
+    .delete(7)
+    .pause(500)
+    .type("Selamat yaa . . .", { delay: 1200})
+    .break()
+    .type("<strong>Happy graduation!!</strong>", { speed: 79, delay: 2300})
+    .break()
+    .break()
+ //   .type("<img src='https://cdn.shopify.com/s/files/1/0284/6430/files/MG_153.jpg?v=1492657098'/>")
+    .pause(400)
+    .type("<em>Have a good day,</em> ", { speed:100, delay: 3600 })
+    //.pause(5000)
+    .type("iren", { delay: 5000 })
+    .type(".", { speed: 120})
+    .go();
+  </script>
+<script>
+    setInterval((e) => {
+        let date = new Date();
+        let h = date.getHours();
+        let m = date.getMinutes();
+        let s = date.getSeconds();;
+
+        let waktu = h + ':' + m + ':' + s;
+        document.querySelector("#waktu").innerHTML = waktu;
+    }, 1000);
+</script>
+</body>
+</html>
